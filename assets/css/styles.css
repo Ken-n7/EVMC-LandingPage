@@ -1,0 +1,392 @@
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f8f9;
+    color: #0d4a6e;
+    padding-top: 40px;
+}
+
+@media (max-width: 991px) {
+    body {
+        padding-top: 40px;
+    }
+}
+
+.evmc-logo {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover .evmc-logo {
+    transform: scale(1.05);
+}
+
+/* Top Bar Gradient */
+.evmc-top-bar.bg-gradient {
+    background: linear-gradient(90deg, #0d4a6e 0%, #1a5f7a 50%, #16697a 100%);
+    border-bottom: 2px solid #28a745;
+}
+
+.evmc-top-bar a:hover {
+    color: #82d7c6 !important;
+    transition: color 0.3s ease;
+}
+
+/* Main Navbar */
+.evmc-navbar {
+    border-bottom: 3px solid #28a745;
+    padding: 0.75rem 0;
+}
+
+/* Logo Circle*/
+.evmc-logo-circle {
+    width: 60px;  
+    height: 60px; 
+    background-image: url(/assets/photos/logo/EVMC_LOGO.png);
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center;  
+    font-size: 1.5rem;
+}
+
+.navbar-brand:hover .evmc-logo-circle {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Navigation Links */
+.evmc-navbar .nav-link {
+    color: #495057;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    position: relative;
+}
+
+.evmc-navbar .nav-link:hover {
+    color: #28a745;
+    background-color: rgba(40, 167, 69, 0.05);
+}
+
+.evmc-navbar .nav-link.active {
+    color: #0d4a6e;
+    background-color: rgba(13, 74, 110, 0.05);
+}
+
+.evmc-navbar .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 3px;
+    background-color: #28a745;
+    border-radius: 2px;
+}
+
+/* Contact Button */
+.evmc-navbar .btn-success {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+}
+
+.evmc-navbar .btn-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+}
+
+/* Mobile Responsive */
+@media (max-width: 991px) {
+    .evmc-navbar .nav-link.active::after {
+        display: none;
+    }
+
+    .evmc-navbar .btn-success {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .evmc-top-bar .col-md-6 {
+        text-align: center !important;
+        font-size: 0.85rem;
+    }
+}
+
+/* Navbar Toggler Custom Style */
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/* Smooth Icon Transitions */
+.nav-link i {
+    transition: transform 0.2s ease;
+}
+
+.nav-link:hover i {
+    transform: scale(1.1);
+}
+
+/* Add padding to body to account for fixed navbar */
+body {
+    padding-top: 120px;
+}
+
+@media (max-width: 991px) {
+    body {
+        padding-top: 100px;
+    }
+}
+
+
+
+/* HERO SECTION */
+.hero {
+    background:
+        url("/assets/photos/494696914_1105971694905256_7982120109890680325_n.jpg") center/cover no-repeat;
+    color: #ffffff;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #f4f8f9;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #f4f8f9;
+}
+
+
+/* Service Cards Hover Effect */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+.service-icon-wrapper {
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-icon-wrapper {
+    transform: scale(1.1);
+}
+
+/* Stats Box */
+.stat-box {
+    transition: background-color 0.3s ease;
+}
+
+.stat-box:hover {
+    background-color: #e8f5e9 !important;
+}
+
+/* CTA Gradient */
+.cta-box.bg-gradient {
+    background: linear-gradient(135deg, #0d4a6e 0%, #1a5f7a 50%, #28a745 100%);
+}
+
+/* Image Placeholder */
+.evmc-image-placeholder {
+    background:
+        url("/assets/photos/Main\ Building.jpg") center/cover no-repeat;
+    border: 2px dashed #dee2e6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .display-5 {
+        font-size: 2rem;
+    }
+
+    .display-6 {
+        font-size: 1.75rem;
+    }
+}
+
+
+  /* Featured Announcement Card */
+  .announcement-card.featured {
+    background: linear-gradient(135deg, #0d4a6e 0%, #1a5f7a 50%, #28a745 100%);
+    min-height: 300px;
+  }
+
+  .announcement-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at top right, rgba(40, 167, 69, 0.3), transparent);
+    z-index: 1;
+  }
+
+  /* Announcement Cards Hover */
+  .announcement-card {
+    transition: all 0.3s ease;
+  }
+
+  .announcement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  /* News Cards */
+  .news-card {
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+  }
+
+  .news-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+    border-color: #28a745;
+  }
+  /* News Image Hover Effect */
+.news-card .news-image img {
+  transition: transform 0.4s ease;
+}
+
+.news-card:hover .news-image img {
+  transform: scale(1.1);
+}
+
+/* Ensure images don't break layout */
+.news-image {
+  background-color: #f8f9fa;
+}
+
+/* Image loading placeholder */
+.news-image img {
+  display: block;
+}
+
+  .news-card:hover .news-image i {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+
+  /* Badge Styles */
+  .badge.bg-success-subtle {
+    background-color: rgba(40, 167, 69, 0.1) !important;
+  }
+
+  .badge.bg-primary-subtle {
+    background-color: rgba(13, 110, 253, 0.1) !important;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .announcement-card.featured {
+      min-height: 250px;
+    }
+
+    .news-image {
+      height: 150px !important;
+    }
+  }
+
+
+
+
+/* FOOTER SECTION */
+.evmc-footer {
+    background: linear-gradient(135deg, #0d4a6e 0%, #1a5f7a 50%, #16697a 100%);
+    position: relative;
+    color: #ffffff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.evmc-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #28a745 0%, #20c997 50%, #28a745 100%);
+}
+
+.evmc-heading {
+    color: #82d7c6;
+    border-bottom: 2px solid #28a745;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.evmc-icon {
+    color: #82d7c6;
+}
+
+.evmc-icon-sm {
+    color: #28a745;
+    font-size: 0.8rem;
+}
+
+.evmc-tagline {
+    background-color: rgba(40, 167, 69, 0.15);
+    border-left: 4px solid #28a745;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+footer address {
+    font-style: normal;
+}
+
+footer .hover-link {
+    transition: all 0.3s ease;
+}
+
+footer .hover-link:hover {
+    color: #82d7c6 !important;
+    transform: translateX(5px);
+}
+
+footer .social-link:hover {
+    transform: scale(1.05) translateX(0);
+}
+
+footer a:focus {
+    outline: 2px solid #82d7c6;
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+/* BUTTONS */
+.btn-primary {
+    background: linear-gradient(90deg, #28a745 0%, #20c997 100%);
+    border: none;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #20c997 0%, #28a745 100%);
+    transform: scale(1.05);
+}
+
+/* ACCESSIBILITY */
+@media (prefers-contrast: high) {
+
+    .evmc-footer,
+    .hero {
+        background: #0d4a6e !important;
+    }
+}
