@@ -41,7 +41,7 @@ body {
 .evmc-logo-circle {
     width: 60px;  
     height: 60px; 
-    background-image: url(/assets/photos/logo/EVMC_LOGO.png);
+    background-image: url(../photos/logo/EVMC_LOGO.png);
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center;  
@@ -145,7 +145,7 @@ body {
 /* HERO SECTION */
 .hero {
     background:
-        url("/assets/photos/494696914_1105971694905256_7982120109890680325_n.jpg") center/cover no-repeat;
+        url("../photos/494696914_1105971694905256_7982120109890680325_n.jpg") center/cover no-repeat;
     color: #ffffff;
     height: 80vh;
     display: flex;
@@ -202,7 +202,7 @@ body {
 /* Image Placeholder */
 .evmc-image-placeholder {
     background:
-        url("/assets/photos/Main\ Building.jpg") center/cover no-repeat;
+        url("../photos/Main\ Building.jpg") center/cover no-repeat;
     border: 2px dashed #dee2e6;
 }
 
